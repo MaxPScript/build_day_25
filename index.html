@@ -13,57 +13,63 @@
 		/>
 	</head>
 	<body>
-		<svg
-			width="0"
-			height="0"
+		<div
+			class="svg_utils"
+			style="display: none"
 		>
-			<defs>
-				<clipPath
-					id="myClipPath"
-					clipPathUnits="objectBoundingBox"
-				>
-					<!-- Triangle pointing right -->
-					<path
-						d="M0.25 0.5 L0.25 0.25 A0.25 0.25 1 0 0 0.25 0 L1 0 L1 1 L0 1 L0 0.5 Z"
-					/>
-				</clipPath>
-			</defs>
-		</svg>
-		<svg
-			width="0"
-			height="0"
-		>
-			<filter
-				id="noise"
-				x="-10%"
-				y="-10%"
-				width="120%"
-				height="120%"
+			<svg
+				width="0"
+				height="0"
 			>
-				<feTurbulence
-					baseFrequency="0.01 0.4"
-					result="NOISE"
-					numOctaves="3"
-				/>
-				<feDisplacementMap
-					in="SourceGraphic"
-					in2="NOISE"
-					scale="40"
-					xChannelSelector="R"
-					yChannelSelector="R"
-				></feDisplacementMap>
-			</filter>
+				<defs>
+					<clipPath
+						id="myClipPath"
+						clipPathUnits="objectBoundingBox"
+					>
+						<!-- Triangle pointing right -->
+						<path
+							d="M0.25 0.5 L0.25 0.25 A0.25 0.25 1 0 0 0.25 0 L1 0 L1 1 L0 1 L0 0.5 Z"
+						/>
+					</clipPath>
+				</defs>
+			</svg>
+			<svg
+				width="0"
+				height="0"
+			>
+				<filter
+					id="noise"
+					x="-10%"
+					y="-10%"
+					width="120%"
+					height="120%"
+				>
+					<feTurbulence
+						baseFrequency="0.01 0.4"
+						result="NOISE"
+						numOctaves="3"
+					/>
+					<feDisplacementMap
+						in="SourceGraphic"
+						in2="NOISE"
+						scale="40"
+						xChannelSelector="R"
+						yChannelSelector="R"
+					></feDisplacementMap>
+				</filter>
 
-			<!-- <image xlink:href="..." x="0" y="0" width="100%" height="100%" filter="url(#noise)"></image> -->
-		</svg>
+				<!-- <image xlink:href="..." x="0" y="0" width="100%" height="100%" filter="url(#noise)"></image> -->
+			</svg>
+		</div>
+
 		<!-- Main Grid Container -->
 		<div class="grid-container">
 			<!-- Header / Hero Section -->
 			<header class="hero">
 				<h1>Развивайте свою силу!</h1>
 				<p>Отпразднуйте День строителя захватывающими спортивными баталиями!</p>
-				<button class="cta-button">
-					Принять участие
+				<!-- <div class="cta-button">
+					<span> Принять участие </span>
 					<span class="icon_whatsapp">
 						<img
 							width="32"
@@ -71,10 +77,10 @@
 							src="./assets/icons/whatsapp.svg"
 							alt=""
 						/>
-						<span>+7(926)604-66-41</span>
 					</span>
-					только сообщения
-				</button>
+					<span>+7(926)604-66-41</span>
+					<span> (только сообщения) </span>
+				</div> -->
 			</header>
 
 			<!-- Events Section -->

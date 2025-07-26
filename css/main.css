@@ -21,9 +21,10 @@ body {
 /* Main Grid Layout */
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
+	/* grid-template-columns: 1fr; */
+	/* grid-template-rows: auto; */
 	gap: 2rem;
+	/* width: auto; */
 	max-width: 1200px;
 	margin: 0 auto;
 	/* padding: 1rem; */
@@ -31,6 +32,7 @@ body {
 
 /* Hero Section */
 .hero {
+	aspect-ratio: 1312/736;
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -39,7 +41,7 @@ body {
 	color: white;
 	text-align: center;
 	padding: 4rem 1rem;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .hero h1 {
@@ -56,9 +58,16 @@ body {
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 1rem;
+	display: inline-flex;
+	gap: 0.4em;
 	.icon_whatsapp {
 		/* width: 2em; */
 		/* height: 2em; */
+		/* display: block; */
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
 	}
 }
 
