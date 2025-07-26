@@ -35,16 +35,48 @@ body {
 	aspect-ratio: 1312/736;
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url(../assets/img/a-vibrant-motivational-poster-celebratin_XzieciaMT9aUeBOFdfu8xA_NzT1dilFS0yy_PSu5DzmKA.jpg);
+	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url(../assets/img/1280_785.jpg); */
+	background: url(../assets/img/1280_785.jpg);
 	background-size: cover;
 	color: white;
 	text-align: center;
-	padding: 4rem 1rem;
+	/* padding: 4rem 1rem; */
 	/* border-radius: 10px; */
+	display: grid;
+	align-items: center;
+	.hero_banner {
+		align-self: start;
+		/* background: blue; */
+		h1 {
+			font-size: 3rem;
+			background: blueviolet;
+			background: url(../assets/img/1280_785.jpg);
+			color: white;
+			/* background: url(images/fire.jpg) no-repeat; */
+			background-clip: text;
+			text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-position: center;
+			font-weight: 800;
+			text-shadow: 1px 1px 2px hsl(0 50% 100% / 0.1);
+			filter: drop-shadow(0px 2px 0px hsl(0 50% 0% / 0.6));
+		}
+	}
+	.hero_content {
+		height: min-content;
+		/* filter: blur(1px); */
+		padding: 4em 1em;
+		border: 1px solid grey;
+		/* background: url(../assets/img/a-vibrant-motivational-poster-celebratin_XzieciaMT9aUeBOFdfu8xA_NzT1dilFS0yy_PSu5DzmKA.jpg); */
+		background-size: cover;
+		max-width: 80%;
+		margin: auto;
+	}
 }
 
-.hero h1 {
+.hero h2 {
 	font-size: 3rem;
 	margin: 0;
 }
