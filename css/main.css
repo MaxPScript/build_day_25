@@ -232,9 +232,23 @@ body {
 .countdown {
 	text-align: center;
 	background: #333;
+	background: hsl(192, 21%, 68%);
 	color: white;
 	padding: 2rem;
 	border-radius: 10px;
+	/* Mask properties */
+	-webkit-mask-image: url(../assets/img/texture/IMG_20240922_142614.jpg);
+	mask-image: url(../assets/img/texture/IMG_20240922_142614.jpg);
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+
+	/* Use luminance mode for JPGs */
+	-webkit-mask-mode: luminance;
+	mask-mode: luminance;
 }
 
 .timer {
@@ -250,11 +264,25 @@ body {
 
 .timer-block {
 	background: rgba(255, 255, 255, 0.2);
+	background: hsl(192 21% 58%);
+	background: hsl(192 40% 30%);
 	border-radius: 8px;
 	padding: 1rem;
 	min-width: 80px;
 	text-align: center;
-	backdrop-filter: blur(5px);
+	/* backdrop-filter: blur(5px); */
+}
+.timer-block {
+	background: rgba(255, 255, 255, 0.2);
+	background: hsl(192 21% 58%);
+	background: hsl(197 50% 35%);
+	border-radius: 8px;
+	padding: 1rem;
+	min-width: 80px;
+	text-align: center;
+	/* backdrop-filter: blur(5px); */
+	box-shadow: 1px 1px 2px hsl(200 50% 10% / 1);
+	border: 1px solid hsl(0 100% 100% / 0.7);
 }
 
 .timer-block span {
