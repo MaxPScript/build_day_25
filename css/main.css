@@ -50,6 +50,7 @@ body {
 		/* background: blue; */
 		h1 {
 			font-size: 3rem;
+			font-size: clamp(16px, 5vw, 48px);
 			background: blueviolet;
 			background: url(../assets/img/1280_785.jpg);
 			color: white;
