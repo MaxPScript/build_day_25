@@ -1,3 +1,19 @@
+:root {
+	--min_fs: 1;
+	--max_fs: 1.5;
+	--min_vw: 20;
+	--max_vw: 45;
+	--min_fs_rem: var(--min_fs) * 1rem;
+	--max_fs_rem: var(--max_fs) * 1rem;
+	--min_vw_rem: var(--min_vw) * 1rem;
+	--slope: (var(max_fs) - var(min_fs)) * (100vw - var(--min_vw_rem)) /
+		(var(--max_vw) - var(--min_vw));
+	font-size: clamp(
+		var(--min_fs_rem),
+		(var(--min_fs_rem) + var(--slope)),
+		var(--max_fs_rem)
+	);
+}
 /* CSS Reset */
 * {
 	margin: 0;
