@@ -1,18 +1,22 @@
 :root {
-	--min_fs: 1;
-	--max_fs: 1.5;
+	/* --min_fs: 1;
+	--max_fs: 4;
 	--min_vw: 20;
-	--max_vw: 45;
-	--min_fs_rem: var(--min_fs) * 1rem;
-	--max_fs_rem: var(--max_fs) * 1rem;
-	--min_vw_rem: var(--min_vw) * 1rem;
-	--slope: (var(max_fs) - var(min_fs)) * (100vw - var(--min_vw_rem)) /
-		(var(--max_vw) - var(--min_vw));
-	font-size: clamp(
+	--max_vw: 65;
+	--min_fs_rem: calc(var(--min_fs) * 1rem);
+	--max_fs_rem: calc(var(--max_fs) * 1rem);
+	--min_vw_rem: calc(var(--min_vw) * 1rem); */
+	/* --slope: (var(max_fs) - var(min_fs)) * (calc(100vw - var(--min_vw_rem))) /
+		(var(--max_vw) - var(--min_vw)); */
+	/* --slope: (var(max_fs) - var(min_fs)) / (var(--max_vw) - var(--min_vw)); */
+	/* --yAxisIntersection: -var(--min_vw) * var(--slope) + var(--min_fs) */
+	/* font-size: clamp(
 		var(--min_fs_rem),
 		(var(--min_fs_rem) + var(--slope)),
 		var(--max_fs_rem)
-	);
+	); */
+	/* font-size: clamp(1rem, calc(-1 * var(--yAxisIntersection)) + var(--slope), 4rem); */
+	/* font-size: clamp(1rem, -0.33rem + 6.7vw, 4rem); */
 }
 /* CSS Reset */
 * {
@@ -48,7 +52,7 @@ body {
 
 /* Hero Section */
 .hero {
-	aspect-ratio: 1312/736;
+	/* aspect-ratio: 1312/736; */
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -364,8 +368,24 @@ select {
 	margin: 0 0.5rem;
 	text-decoration: none;
 }
-@media (width <= 719px) {
-	.event-grid {
-		margin-inline: 6em;
-	}
+
+.debug-font-size {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-family: monospace;
+	z-index: 9999;
+	font-size: 14px;
+	width: 50%;
+}
+
+.debug-breakpoint {
+	width: 50%;
+	margin-top: 5px;
+	height: 4px;
+	background: linear-gradient(90deg, red 0%, green 100%);
 }

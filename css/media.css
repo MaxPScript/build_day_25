@@ -1,0 +1,5 @@
+@media (width <= 719px) {
+	.event-grid {
+		margin-inline: 6em;
+	}
+}
