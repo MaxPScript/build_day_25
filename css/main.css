@@ -69,8 +69,8 @@ body {
 		align-self: start;
 		/* background: blue; */
 		h1 {
-			font-size: 3rem;
-			font-size: clamp(16px, 5vw, 48px);
+			/* font-size: 3rem; */
+			/* font-size: clamp(16px, 5vw, 48px); */
 			background: blueviolet;
 			background: url(../assets/img/1280_785.jpg);
 			color: white;
@@ -98,7 +98,7 @@ body {
 }
 
 .hero h2 {
-	font-size: 3rem;
+	/* font-size: 3rem; */
 	margin: 0;
 }
 
@@ -255,7 +255,7 @@ body {
 	background: hsl(192, 21%, 68%);
 	color: white;
 	padding: 2rem;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	/* Mask properties */
 	-webkit-mask-image: url(../assets/img/texture/IMG_20240922_142614.jpg);
 	mask-image: url(../assets/img/texture/IMG_20240922_142614.jpg);
@@ -288,7 +288,7 @@ body {
 	background: hsl(192 40% 30%);
 	border-radius: 8px;
 	padding: 1rem;
-	min-width: 80px;
+	/* min-width: 80px; */
 	text-align: center;
 	/* backdrop-filter: blur(5px); */
 }
@@ -298,7 +298,7 @@ body {
 	background: hsl(197 50% 35%);
 	border-radius: 8px;
 	padding: 1rem;
-	min-width: 80px;
+	/* min-width: 80px; */
 	text-align: center;
 	/* backdrop-filter: blur(5px); */
 	box-shadow: 1px 1px 2px hsl(200 50% 10% / 1);
@@ -306,7 +306,7 @@ body {
 }
 
 .timer-block span {
-	font-size: 2.5rem;
+	/* font-size: 2.5rem; */
 	font-weight: bold;
 	display: block;
 }
@@ -360,7 +360,7 @@ select {
 	padding: 2rem;
 	background: #333;
 	color: white;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .social-links a {
