@@ -171,6 +171,23 @@ body {
 	}
 	.bg_2 {
 		background-color: hsl(168, 100%, 50%);
+		.event_card_text {
+			/* background-color: hsl(208, 100%, 64%); */
+			/* background-image: radial-gradient(
+				circle,
+				hsl(208, 100%, 64%),
+				hsl(208, 100%, 44%)
+			); */
+			rotate: -3deg;
+		}
+		.noisy_bg {
+			background-image: radial-gradient(
+				circle,
+				hsl(168, 100%, 74%),
+				hsl(168, 100%, 40%)
+			);
+			/* box-shadow: 5px 5px 10px 10px hsl(208 100% 45% / 1); */
+		}
 	}
 	.bg_3 {
 		background-color: hsl(27, 100%, 50%);
