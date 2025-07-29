@@ -107,6 +107,7 @@ body {
 }
 .hero p {
 	color: hsl(72 50% 25% / 1);
+	font-weight: 600;
 }
 
 .cta-button {
