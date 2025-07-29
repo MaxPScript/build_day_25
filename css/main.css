@@ -88,8 +88,8 @@ body {
 	.hero_content {
 		height: min-content;
 		/* filter: blur(1px); */
-		padding: 4em 1em;
-		border: 1px solid grey;
+		padding: 4em 1em 0.5em;
+		/* border: 1px solid grey; */
 		/* background: url(../assets/img/a-vibrant-motivational-poster-celebratin_XzieciaMT9aUeBOFdfu8xA_NzT1dilFS0yy_PSu5DzmKA.jpg); */
 		background-size: cover;
 		max-width: 80%;
