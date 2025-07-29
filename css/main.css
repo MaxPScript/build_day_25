@@ -52,7 +52,7 @@ body {
 
 /* Hero Section */
 .hero {
-	/* aspect-ratio: 1312/736; */
+	aspect-ratio: 1280/785;
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
 	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -80,6 +80,7 @@ body {
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-position: center;
+			background-position: 50% 65%;
 			font-weight: 800;
 			/* text-shadow: 1px 1px 2px hsl(0 50% 100% / 0.1); */
 			filter: drop-shadow(0px 1px 0px hsl(0 50% 0% / 0.9));
