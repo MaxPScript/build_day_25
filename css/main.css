@@ -364,18 +364,37 @@ select {
 
 /* Footer */
 .footer {
-	text-align: center;
+	/* text-align: center;
 	padding: 2rem;
 	background: #333;
-	color: white;
-	/* border-radius: 10px; */
+	color: white; */
+	/* border-radi us: 10px; */
+	padding: 1.5rem 2rem;
+	background: hsl(210 50% 10% / 1);
+	display: flex;
+	justify-content: space-between;
+	p {
+		margin-inline-start: auto;
+		color: white;
+		a {
+			background: azure;
+			margin-inline: 0.3rem;
+			border-radius: 0.2rem;
+			padding: 0.2rem 0.3rem;
+			text-decoration: none;
+			font-weight: 600;
+			img {
+				width: 1rem;
+			}
+		}
+	}
 }
 
-.social-links a {
+/* .social-links a {
 	color: #ff6b00;
 	margin: 0 0.5rem;
 	text-decoration: none;
-}
+} */
 
 .debug-font-size {
 	position: fixed;
